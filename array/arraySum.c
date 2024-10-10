@@ -1,14 +1,21 @@
 #include<stdio.h>
 int main()
 {
-    int a[5];
-    int sum=0;
-    for(int i =0;i<5;i++){
-        scanf("%d",&a[i]);
+    long long int N;
+    scanf("%lld",&N);
+    long long int a[N];
+    long long int sum=0;
+    for(int i =0;i<N;i++){
+        scanf("%lld",&a[i]);
     }
-    for(int i =0;i<5;i++){
+    for(int i =0;i<N;i++){
         sum=sum+a[i];
 
     }
-    printf("The sum is:%d",sum);
+    if(sum<0){
+        printf("%lld",sum*-1);
+    }else{
+
+    printf("%lld",sum);
+    }
 }
